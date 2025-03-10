@@ -1,0 +1,46 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Grok Prompt</title>
+        <style>
+            body {
+                width: 260px;
+                padding: 10px;
+                background-color: #111;
+                color: #bbb;
+                font-size: 14px;
+            }
+            input {
+                width: 100%;
+                box-sizing: border-box;
+                margin: 0;
+                padding: 0;
+                padding: 6px 8px;
+                background-color: #333;
+                color: #ddd;
+                outline: none;
+                border-radius: 5px;
+                border: none;
+                font-size: 16px;
+            }
+            #inputPreview {
+                word-wrap: break-word;
+            }
+            .g {
+                color: #888;
+            }
+        </style>
+    </head>
+    <body>
+        <p>Prompt to Grok.com</p>
+        <input
+            type="text"
+            id="promptInput"
+            placeholder="Enter your prompt for Grok"
+        />
+        <p class="g">Full prompt:</p>
+        <p id="inputPreview"></p>
+        <p class="g">Press "Enter" to submit prompt</p>
+        <script src="popup.js"></script>
+    </body>
+</html>

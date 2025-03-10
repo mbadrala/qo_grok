@@ -1,0 +1,25 @@
+{
+  "name": "Quick open Grok with a prompt",
+  "version": "1.0",
+  "description": "Opens grok.com with a user prompt using Option+Shift+G",
+  "manifest_version": 3,
+  "permissions": [
+    "commands",
+    "tabs"
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "commands": {
+    "open-grok": {
+      "suggested_key": {
+        "default": "Alt+Shift+G",
+        "mac": "Alt+Shift+G"
+      },
+      "description": "Opens grok.com with a user-entered prompt"
+    }
+  }
+}
