@@ -3,10 +3,13 @@
   "version": "1.0",
   "description": "Opens grok.com with a user prompt using Option+Shift+G",
   "manifest_version": 3,
-  "permissions": [
-    "commands",
-    "tabs"
-  ],
+  "icons": {
+    "16": "icons/icon16.png",
+    "32": "icons/icon32.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "permissions": ["commands", "tabs"],
   "background": {
     "service_worker": "background.js"
   },
